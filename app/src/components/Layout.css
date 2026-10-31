@@ -1,0 +1,57 @@
+:root {
+    --hijau-tua: #166534;
+    --hijau: #16a34a;
+    --hijau-muda: #dcfce7;
+    --putih: #ffffff;
+    --label: #0c0c0c;
+}
+
+.kerangka {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--putih);
+    color: var(--label);
+    min-height: 100vh;
+}
+
+.kepala {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--hijau-tua);
+    color: var(--putih);
+}
+
+.menu {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.menu a {
+    color: var(--putih);
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+}
+
+.menu a.active {
+    background-color: var(--putih);
+    color: var(--hijau-tua);
+    font-weight: 600;
+}
+
+.menu a:hover {
+    background-color: var(--hijau);
+}
+
+.isi {
+    flex: 1;
+    padding: 2rem;
+}
+
+.kaki {
+    padding: 1rem 2rem;
+    text-align: center;
+    background-color: var(--hijau-muda);
+    color: var(--hijau-tua);
+}
