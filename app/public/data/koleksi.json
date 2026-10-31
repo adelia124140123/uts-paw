@@ -6,7 +6,7 @@
     "kodeAlat": "MEK-001",
     "jumlah": 1,
     "kondisi": "Baik"
-  }
+  },
 
   {
     "id": "2",
@@ -15,7 +15,7 @@
     "kodeAlat": "MEK-002",
     "jumlah": 1,
     "kondisi": "Baik"
-  }
+  },
 
   {
     "id": "3",
@@ -24,7 +24,7 @@
     "kodeAlat": "MEK-003",
     "jumlah": 10,
     "kondisi": "Baik"
-  }
+  },
 
   {
     "id": "4",
@@ -33,7 +33,7 @@
     "kodeAlat": "LDM-001",
     "jumlah": 20,
     "kondisi": "Baik"
-  }
+  },
 
   {
     "id": "5",
@@ -42,7 +42,7 @@
     "kodeAlat": "LDM-002",
     "jumlah": 5,
     "kondisi": "Rusak Ringan"
-  }
+  },
 
   {
     "id": "6",
@@ -51,13 +51,40 @@
     "kodeAlat": "LDM-003",
     "jumlah": 10,
     "kondisi": "Baik"
-  }
+  },
 
   {
     "id": "7",
     "judul": "Higrometer",
     "kategori": "Termodinamika",
     "kodeAlat": "TRM-001",
+    "jumlah": 10,
+    "kondisi": "Baik"
+  },
+
+  {
+    "id": "8",
+    "judul": "Barometer",
+    "kategori": "Termodinamika",
+    "kodeAlat": "TRM-002",
+    "jumlah": 5,
+    "kondisi": "Perlu Kalibrasi"
+  },
+
+  {
+    "id": "9",
+    "judul": "Kit Optik Geometris",
+    "kategori": "Gelombang dan Optik",
+    "kodeAlat": "GDO-001",
+    "jumlah": 2,
+    "kondisi": "Baik"
+  },
+
+  {
+    "id": "10",
+    "judul": "Tangki Gelombang",
+    "kategori": "Gelombang dan Optik",
+    "kodeAlat": "GDO-002",
     "jumlah": 10,
     "kondisi": "Baik"
   }
