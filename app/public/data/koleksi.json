@@ -1,10 +1,64 @@
 [
   {
     "id": "1",
-    "judul": "Contoh item pertama",
-    "kategori": "Contoh",
-    "fieldTema1": "ganti sesuai field tema",
-    "fieldTema2": 0,
-    "fieldTema3": "ganti sesuai field tema"
+    "judul": "Air Track",
+    "kategori": "Mekanika",
+    "kodeAlat": "MEK-001",
+    "jumlah": 1,
+    "kondisi": "Baik"
+  }
+
+  {
+    "id": "2",
+    "judul": "Mesin Atwood",
+    "kategori": "Mekanika",
+    "kodeAlat": "MEK-002",
+    "jumlah": 1,
+    "kondisi": "Baik"
+  }
+
+  {
+    "id": "3",
+    "judul": "Neraca Pegas",
+    "kategori": "Mekanika",
+    "kodeAlat": "MEK-003",
+    "jumlah": 10,
+    "kondisi": "Baik"
+  }
+
+  {
+    "id": "4",
+    "judul": "Amperemeter",
+    "kategori": "Listrik dan Magnet",
+    "kodeAlat": "LDM-001",
+    "jumlah": 20,
+    "kondisi": "Baik"
+  }
+
+  {
+    "id": "5",
+    "judul": "Galvanometer",
+    "kategori": "Listrik dan Magnet",
+    "kodeAlat": "LDM-002",
+    "jumlah": 5,
+    "kondisi": "Rusak Ringan"
+  }
+
+  {
+    "id": "6",
+    "judul": "Magnet U",
+    "kategori": "Listrik dan Magnet",
+    "kodeAlat": "LDM-003",
+    "jumlah": 10,
+    "kondisi": "Baik"
+  }
+
+  {
+    "id": "7",
+    "judul": "Higrometer",
+    "kategori": "Termodinamika",
+    "kodeAlat": "TRM-001",
+    "jumlah": 10,
+    "kondisi": "Baik"
   }
 ]
