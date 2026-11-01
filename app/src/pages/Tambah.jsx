@@ -37,7 +37,7 @@ export default function Tambah() {
 
     return (
         <form className="formulir" onSubmit={simpan} noValidate>
-            <h1>Tambah Inventaris Baru</h1>
+            <h1>Tambahkan Inventaris ALat Baru</h1>
 
             <label htmlFor='judul'>Judul</label>
             <input id='judul' name='judul' placeholder="Masukkan nama alat" value={form.judul} onChange={ubah} />
