@@ -1,0 +1,72 @@
+:root {
+    --hijau-tua: #166534;
+    --hijau: #16a34a;
+    --hijau-muda: #dcfce7;
+    --putih: #ffffff;
+    --label: #0c0c0c;
+}
+
+#halaman-koleksi {
+    text-align: center;
+}
+
+#bilah-alat {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+#bilah-alat input,
+#bilah-alat select {
+    min-width: 220px;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--hijau);
+    border-radius: 6px;
+    font: inherit;
+}
+
+#bilah-alat input:focus,
+#bilah-alat select:focus {
+    outline: 2px solid var(--hijau);
+}
+
+.gulir-alat {
+    overflow-x: auto ;
+}
+
+#tabel-koleksi {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabel-alat th,
+.tabel-alat td {
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--hijau-muda);
+    text-align: center;
+}
+
+.tabel-alat thead th {
+    background: var(--hijau-tua);
+    color: var(--putih);
+}
+
+.tabel-alat tbody tr:nth-child(even) {
+    background: #f0fdf4;
+}
+
+.tabel-alat tbody tr:hover {
+    background: var(--hijau-muda);
+}
+
+.tabel-alat a {
+    color: var(--hijau-tua);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.tabel-alat a:hover {
+    text-decoration: underline;
+}

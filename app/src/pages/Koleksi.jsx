@@ -1,7 +1,9 @@
 import { useState } from "react";
 import useKoleksi from "../hooks/useKoleksi.js";
 import KotakPencarian from "../components/kotakPencarian.jsx";
-import KartuItem from "../components/kartuItem.jsx";
+import FilterKategori from "../components/filterKategori.jsx";
+import TabelKoleksi from "../components/tabelKoleksi.jsx";
+import './Koleksi.css'
 
 export default function Koleksi() {
     const {koleksi, loading, error} = useKoleksi()
@@ -19,24 +21,16 @@ export default function Koleksi() {
     )
 
     return (
-        <section>
+        <section id="halaman-koleksi">
         <h1>Daftar Inventaris Alat Laboratorium</h1>
-        <div className="alat-koleksi">
+        <div id="bilah-alat">
         <KotakPencarian nilai={cari} onUbah={setCari} />
-        <select aria-label='Kategori' value={kategori} onChange={(e) => setKategori(e.target.value)}>
-            {daftarKategori.map((k) => (
-                <option key={k}>{k}</option>
-            ))}
-            </select>
+        <FilterKategori nilai={kategori} onUbah={setKategori} daftar={daftarKategori} />
         </div>
         {tampil.length === 0 ? (
             <p>Tidak ada alat yang cocok.</p>
         ) : (
-            <div className="daftar-kartu">
-                {tampil.map((alat) => (
-                    <KartuItem key={alat.id} alat={alat} />
-                ))}
-            </div>
+            <TabelKoleksi daftar={tampil} />
         )}
         </section>
 
