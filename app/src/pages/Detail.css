@@ -1,0 +1,80 @@
+:root {
+    --hijau-tua: #166534;
+    --hijau: #16a34a;
+    --hijau-muda: #dcfce7;
+    --putih: #ffffff;
+    --label: #0c0c0c;
+}
+
+.detail {
+    max-width: 520px;
+    margin: 2.5rem auto;
+    padding: 2rem;
+    background: var(--putih);
+    border: 1px solid var(--hijau-muda);
+    border-top: 5px solid var(--hijau);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.detail h1 {
+    margin: 0 0 1.2rem;
+    font-size: 1.8rem;
+    color: var(--hijau-tua);
+}
+
+.detail dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin: 0 0 1.5rem;
+}
+
+.detail dt,
+.detail dd {
+    margin: 0;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--hijau-muda);
+}
+
+.detail dt {
+    padding-right: 2rem;
+    color: var(--label);
+    opacity: 0.7;
+}
+
+.detail dd {
+    font-weight: 600;
+    text-align: right;
+    color: var(--label);
+}
+
+.detail .aksi {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.detail .aksi button {
+    padding: 0.55rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background: var(--hijau-tua);
+    color: var(--putih);
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.detail .aksi button:hover {
+    background: var(--hijau);
+}
+
+.detail .aksi a {
+    padding: 0.5rem 1.2rem;
+    border: 1px solid var(--hijau-tua);
+    border-radius: 8px;
+    color: var(--hijau-tua);
+    text-decoration: none;
+}
+
+.detail .aksi a:hover {
+    background: var(--hijau-muda);
+}
