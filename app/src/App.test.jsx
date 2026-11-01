@@ -37,7 +37,7 @@ test('beranda menampilkan ringkasan jumlah alat dan kategori yang tersedia', asy
   expect(await screen.findByText(/Ada 2 alat dalam 2 kategori/)).toBeInTheDocument()
 })
 
-test('pencarian memfilter daftar berdasarkan judul', async () => ) {
+test('pencarian memfilter daftar berdasarkan judul', async () => {
   buka('/koleksi')
   await screen.findByText('Air Track')
 
@@ -45,4 +45,4 @@ test('pencarian memfilter daftar berdasarkan judul', async () => ) {
 
   expect(screen.quertyByText('Air Track')).not.toBeInTheDocument()
   expect(screen.getByText('Magnet U')).toBeInTheDocument()
-}
+})
