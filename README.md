@@ -28,16 +28,30 @@ https://adelia124140123.github.io/uts-paw/
 ![Beranda](screenshots/beranda.png)
 ![Koleksi](screenshots/koleksi.png)
 ![Detail](screenshots/detail.png)
+![Tambah](screenshots/Tambah.png)
+![Statistik](screenshots/Statistik.png)
+![Tentang](screenshots/Tentang.png)
+![TidakDitemukan](screenshots/TidakDitemukan.png)
 
 ## Cara Menjalankan
+Menjalankan secara lokal:
 
 ```bash
+cd app
 npm install
 npm run dev
 ```
-
-Menjalankan pengujian
+Setelah itu buka `http://localhost:5173/` di browser. akan tertampil halaman web yang sudah dibuat. dan untuk menjalankan pengujian caranya adalah:
 
 ```bash
 npm test
 ```
+
+## Konsep React yang dipakai
+
+- **useState dan useEffect:** `useState` menyimpan data yang bisa berubah. contohnya pencarian, kategori, dan status loading. sedangkan `useEffect` dipakai untuk mengambil data dari `koleksi.json` saat aplikasi pertama kali dibuka.
+- **Context API:** daftar alat disimpan di satu tempat yaitu `koleksiProvider` lalu diteruskan ke halaman Koleksi, Detail, Tambah, Statistik, dan Beranda. jadi kita tidak perlu mengirim data dari satu komponen ke komponen lain secara manual.
+- **Custom Hook:** `useLocalStorage` menyimpan data ke browser supaya datanya tidak hilang saat halaman di re-fresh, dan `useKoleksi` memudahkan halaman mengambil data dari Context.
+- **React Router:** dipakai untuk 7 rute, yaitu (`/`, `/koleksi`, `/koleksi/:id`, `/tambah`, `/statistik`, `/tentang`, `*` untuk 404). `useParams` mengambil id alat dari alamat, `useNavigate` memindahkan halaman setelah menyimpan atau menghapus, dan `NavLink` membuat menu di header.
+- **Fetch dan async/await:** data awalnya diambil dari `koleksi.json`. selama menunggu, tampilkan teks "Memuat data...", lalu jika gagal akan menampilkan pesan error.
+- **Komponen:** tampilan dipecah menjadi bagian bagian kecil yang isinya bisa dipakai ulang, contohnya `Layout`, `kotakPencarian`, `filterKategori`, `tabelKoleksi`, dan `kartuItem`.
