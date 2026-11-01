@@ -1,20 +1,21 @@
 import mahasiswa from '../../mahasiswa.json'
+import './Tentang.css'
 
 const REPO = 'https://github.com/adelia124140123/uts-paw'
 
 export default function Tentang() {
     const {nama, nim, kelas, tema} = mahasiswa
     return (
-        <section>
+        <section id='halaman-tentang'>
             <h1>Tentang Pembuat</h1>
-            <dl>
-                <dt>Nama</dt>
+            <dl className='biodata'>
+                <dt>Nama:</dt>
                 <dd>{nama}</dd>
-                <dt>NIM</dt>
+                <dt>NIM:</dt>
                 <dd>{nim}</dd>
-                <dt>Kelas</dt>
+                <dt>Kelas:</dt>
                 <dd>{kelas}</dd>
-                <dt>Tema</dt>
+                <dt>Tema:</dt>
                 <dd>{tema}</dd>
             </dl>
             <p>
