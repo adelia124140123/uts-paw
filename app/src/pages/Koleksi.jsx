@@ -1,8 +1,8 @@
 import { useState } from "react";
 import useKoleksi from "../hooks/useKoleksi.js";
 import KotakPencarian from "../components/kotakPencarian.jsx";
-import FilterKategori from "../components/FilterKategori.jsx";
-import TabelKoleksi from "../components/TabelKoleksi.jsx";
+import FilterKategori from "../components/filterKategori.jsx";
+import TabelKoleksi from "../components/tabelKoleksi.jsx";
 import './Koleksi.css'
 
 export default function Koleksi() {
