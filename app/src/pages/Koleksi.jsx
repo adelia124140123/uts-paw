@@ -1,7 +1,6 @@
 import { useState } from "react";
 import useKoleksi from "../hooks/useKoleksi.js";
 import KotakPencarian from "../components/kotakPencarian.jsx";
-import KartuItem from "../components/kartuItem.jsx";
 import FilterKategori from "../components/filterKategori.jsx";
 import TabelKoleksi from "../components/tabelKoleksi.jsx";
 import './Koleksi.css'
