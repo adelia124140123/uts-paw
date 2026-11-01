@@ -6,7 +6,7 @@ export default function Statistik() {
     const perKategori = koleksi.reduce((hitung, {kategori}) => ({...hitung, [kategori]: (hitung[kategori] ?? 0) + 1}), {})
 
     return (
-        <section>
+        <section id="halaman-statistik">
             <h1>Statistik Inventaris</h1>
             <div className='tabel-gulir'>
                 <table className="tabel-data">

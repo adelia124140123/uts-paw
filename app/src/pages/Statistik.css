@@ -13,6 +13,7 @@
 .tabel-data {
     width: 100%;
     max-width: 480px;
+    margin: 0 auto;
     border-collapse: collapse;
 }
 
@@ -20,7 +21,7 @@
 .tabel-data td {
     padding: 0.5rem 0.75rem;
     border-bottom: 1px solid var(--hijau-muda);
-    text-align: left;
+    text-align: center;
 }
 
 .tabel-data thead th {
@@ -32,17 +33,16 @@
     background: var(--hijau-muda);
 }
 
-.tabel-data td:last-child,
-.tabel-data th:last-child {
-    text-align: right;
-}
-
 .tabel-data tfoot th,
 .tabel-data tfoot td {
     border-top: 2px solid var(--hijau-tua);
     background: var(--hijau-muda);
     color: var(--hijau-tua);
     font-weight: 600;
+}
+
+#halaman-statistik {
+    text-align: center;
 }
 
 @media (max-width: 480px) {
