@@ -70,3 +70,15 @@
 .tabel-alat a:hover {
     text-decoration: underline;
 }
+
+.baris-alat {
+    cursor: pointer;
+}
+
+#halaman-koleksi {
+    align-self: flex-start;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    min-height: 70vh;
+}
